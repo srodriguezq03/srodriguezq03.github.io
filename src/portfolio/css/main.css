@@ -1,0 +1,118 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(75, 75, 75);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+#contenedor {
+    min-height: 100vh; 
+    display: -webkit-box; 
+    display: -ms-flexbox; 
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+header, nav, section, footer {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    padding: 10px;
+}
+
+header, footer {
+    font-style: italic;
+    background-image: url(../img/banner.jpg);
+}
+
+nav {
+    background-color: black;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+section {
+    position: relative;
+    background: -o-linear-gradient(top , black, rgb(75, 75, 75));
+    background: -webkit-gradient(linear , left top, left bottom , from(black), to(rgb(75, 75, 75)));
+    background: linear-gradient(to bottom , black, rgb(75, 75, 75));
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1; 
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 20px;
+}
+
+aside{
+    position: relative;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 30px;
+    width: 80vw; 
+}
+
+main{
+    position: relative;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 30px;
+    width: 80vw; 
+}
+
+aside, main {
+    border: 1px solid #ddd; 
+    padding: 20px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1; 
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+a {
+    color: #1f6dff;
+}
+
+a:visited {
+    color: #a61dc2;
+}
+
+a:hover {
+    color: #ff3300; 
+}
+
+a:active {
+    color: #cc0000; 
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+}
+
+.avatar{
+    height: 100px;
+    width: 100px;
+}
